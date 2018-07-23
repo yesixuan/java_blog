@@ -8,23 +8,21 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * 用户控制器.
- * 
- * @author <a href="https://waylau.com">Way Lau</a>
- * @date 2017年2月26日
  */
 @Controller
 @RequestMapping("/admins")
 public class AdminController {
- 
 
-	/**
-	 * 获取后台管理主页面
-	 * @return
-	 */
-	@GetMapping
-	public ModelAndView listUsers(Model model) {
-		return new ModelAndView("admins/index", "menuList", model);
-	}
- 
-	 
+
+    /**
+     * 获取后台管理主页面
+     *
+     * @return
+     */
+    @GetMapping
+    public ModelAndView listUsers(Model model) {
+        return new ModelAndView("admins/index", "menuList", model);
+    }
+
+
 }
